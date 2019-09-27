@@ -85,8 +85,19 @@ GEM
       capistrano (~> 3.7)
       capistrano-bundler
       puma (~> 3.4)
+    cells (4.1.7)
+      declarative-builder (< 0.2.0)
+      declarative-option (< 0.2.0)
+      tilt (>= 1.4, < 3)
+      uber (< 0.2.0)
+    cells-rails (0.0.9)
+      actionpack (>= 3.0)
+      cells (>= 4.1.6, < 5.0.0)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    declarative-builder (0.1.0)
+      declarative-option (< 0.2.0)
+    declarative-option (0.1.0)
     erubi (1.9.0)
     erubis (2.7.0)
     ffi (1.11.1)
@@ -210,6 +221,7 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uber (0.1.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -237,6 +249,7 @@ DEPENDENCIES
   capistrano-rvm
   capistrano-yarn
   capistrano3-puma
+  cells-rails
   figaro
   haml-rails
   jbuilder (~> 2.7)

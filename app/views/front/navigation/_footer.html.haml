@@ -1,0 +1,98 @@
+/ footer starts
+%footer
+  / footer-widgets-wrapper starts
+  .footer-widgets-wrapper
+    / container starts
+    .container
+      .column.dt-sc-one-fourth.first
+        %aside.widget.widget_text
+          %h3.widgettitle.red_sketch About Kids Life
+          %p
+            Happy
+            %a{:href => ""}
+              %strong Kids Life
+            comes with powerful theme options, which empowers you to quickly and easily build incredible store.
+          %ul
+            %li
+              %a{:href => ""} English Grammar Class
+            %li
+              %a{:href => ""} Music class
+            %li
+              %a{:href => ""} Swimming &amp; Karate
+            %li
+              %a{:href => ""} Lot of HTML Styles
+            %li
+              %a{:href => ""} Unique News Page Design
+      .column.dt-sc-one-fourth
+        %aside.widget.widget_recent_entries
+          %h3.widgettitle.green_sketch Latest Post
+          %ul
+            %li
+              %a{:href => ""}
+                %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
+              %h6
+                %a{:href => ""} Amazing post with all  goodies
+              %span March 23, 2014
+            %li
+              %a{:href => ""}
+                %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
+              %h6
+                %a{:href => ""} Amazing post with all  goodies
+              %span March 23, 2014
+            %li
+              %a{:href => ""}
+                %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
+              %h6
+                %a{:href => ""} Amazing post with all  goodies
+              %span March 23, 2014
+      .column.dt-sc-one-fourth
+        %aside.widget.tweetbox
+          %h3.widgettitle.yellow_sketch
+            %a{:href => "#"} Twitter Feeds
+          #tweets_container
+      .column.dt-sc-one-fourth
+        %aside.widget.widget_text
+          %h3.widgettitle.steelblue_sketch Contact
+          .textwidget
+            %p.dt-sc-contact-info
+              %span.fa.fa-map-marker
+              4318 Mansion House, Greenland
+              %br/
+              United States
+            %p.dt-sc-contact-info
+              %span.fa.fa-phone
+              (000) 233 - 3236
+            %p.dt-sc-contact-info
+              %span.fa.fa-envelope
+              %a{:href => "mailto:yourname@somemail.com"} Kidslife@somemail.com
+        %aside.widget.mailchimp
+          %p We're social
+          %form.mailchimp-form{:action => "php/subscribe.php", :method => "post", :name => "frmnewsletter"}
+            %p
+              %span.fa.fa-envelope-o
+              %input{:name => "mc_email", :placeholder => "Email Address", :required => "", :type => "email"}/
+            %input.button{:name => "btnsubscribe", :type => "submit", :value => "Subscribe"}/
+          #ajax_subscribe_msg
+    / container ends
+  / footer-widgets-wrapper ends
+  .copyright
+    .container
+      %p.copyright-info
+        © 2014 Kids Life. All rights reserved. Design by
+        %a{:href => "http://themeforest.net/user/designthemes", :title => ""} Buddhathemes
+      .footer-links
+        %p Follow us
+        %ul.dt-sc-social-icons
+          %li.facebook
+            %a{:href => "#"}
+              %img{:alt => "", :src => asset_path("defaults/facebook.png"), :title => ""}/
+          %li.twitter
+            %a{:href => "#"}
+              %img{:alt => "", :src => asset_path("defaults/twitter.png"), :title => ""}/
+          %li.gplus
+            %a{:href => "#"}
+              %img{:alt => "", :src => asset_path("defaults/gplus.png"), :title => ""}/
+          %li.pinterest
+            %a{:href => "#"}
+              %img{:alt => "", :src => asset_path("defaults/pinterest.png"), :title => ""}/
+/ footer ends

@@ -8,6 +8,11 @@
 
     = stylesheet_link_tag 'front', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'front', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'styles', 'data-turbolinks-track': 'reload'
 
-  %body
-    = yield
+  %body.main
+    .wrapper
+      = render partial: "front/navigation/header"
+      = yield
+      = render partial: "front/navigation/footer"
+    %a.back-to-top{:href => "", :title => "Go to Top"} To Top ↑

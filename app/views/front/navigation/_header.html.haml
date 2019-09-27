@@ -1,0 +1,186 @@
+/ header starts
+%header
+  .container
+    .logo
+      %a{:href => "index.html", :title => "Kids Life"}
+        %img{:alt => "Kids Life", :src => asset_path("defaults/logo.png"), :title => "Kids Life"}/
+    .contact-details
+      %p.mail
+        %a{:href => "#"} contact@kidslife.com
+        %span.fa.fa-envelope
+      %p.phone-no
+        %i +1 959 552 5963
+        %span.fa.fa-phone
+  / menu-container starts
+  #menu-container
+    .container
+      / nav starts
+      %nav#main-menu
+        #dt-menu-toggle.dt-menu-toggle
+          Menu
+          %span.dt-menu-toggle-icon
+        %ul#menu-main-menu.menu
+          %li.current_page_item.menu-item-simple-parent.menu-item-depth-0.red
+            %a{:href => "index.html"} Home
+            %ul.sub-menu
+              %li
+                %a{:href => "#"} Submenu Level I
+              %li
+                %a{:href => "#"} Submenu Level I
+              %li
+                %a{:href => "#"} Submenu Level I
+              %li
+                %a{:href => "#"} Submenu Level I
+              %li
+                %a{:href => "#"} Submenu Level I
+                %ul.sub-menu
+                  %li
+                    %a{:href => "#"} Submenu Level II
+                  %li
+                    %a{:href => "#"} Submenu Level II
+                  %li
+                    %a{:href => "#"} Submenu Level II
+                %a.dt-menu-expand +
+            %a.dt-menu-expand +
+          %li.mustard
+            %a{:href => "about.html"} About us
+          %li.green
+            %a{:href => "our-staffs.html"} Our Staffs
+          %li.yellow
+            %a{:href => "services.html"} Services
+          %li.menu-item-simple-parent.menu-item-depth-0.blue
+            %a{:href => "portfolio-four-column.html", :title => ""} Portfolio
+            %ul.sub-menu
+              %li
+                %a{:href => "portfolio-four-column.html"} Portfolio Four Column
+              %li
+                %a{:href => "portfolio-three-column.html"} Portfolio Three Column
+                %ul.sub-menu
+                  %li
+                    %a{:href => "portfolio-three-column-with-sidebar.html"} With Sidebar
+                %a.dt-menu-expand +
+            %a.dt-menu-expand +
+          %li.menu-item-megamenu-parent.megamenu-4-columns-group.menu-item-depth-0.steelblue
+            %a{:href => "#", :title => ""} Pages
+            .megamenu-child-container
+              %ul.sub-menu
+                %li
+                  %a{:href => "#"} Useful Shortcodes
+                  %ul.sub-menu
+                    %li
+                      %a{:href => "shortcodes.html"} Typography
+                    %li
+                      %a{:href => "buttons-lists.html", :title => ""} Buttons &amp; Lists
+                    %li
+                      %a{:href => "columns.html", :title => ""} Columns
+                    %li
+                      %a{:href => "fancy-boxes.html", :title => ""} Fancy Boxes
+                    %li
+                      %a{:href => "icon-boxes.html", :title => ""} Icon Boxes
+                    %li
+                      %a{:href => "pricing-tables.html", :title => ""} Pricing Tables
+                    %li
+                      %a{:href => "progressbars.html", :title => ""} Progress Bars
+                    %li
+                      %a{:href => "quotes.html", :title => ""} Quotes
+                    %li
+                      %a{:href => "tabs-toggles.html", :title => ""} Tabs &amp; Toggles
+                  %a.dt-menu-expand +
+                %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-depth-1.menu-item-with-widget-area
+                  %a{:href => "#"} Popular Products
+                  .menu-item-widget-area-container
+                    %ul
+                      %li.widget.widget_popular_products
+                        %ul.product_list_widget
+                          %li
+                            %a{:href => "#", :title => ""}
+                              %img{:alt => "product", :src => "http://placehold.it/70x70"}/
+                              Ellents Style Grade
+                            %span.amount $20.00
+                          %li
+                            %a{:href => "#", :title => ""}
+                              %img{:alt => "product", :src => "http://placehold.it/70x70"}/
+                              Ellents Style Grade
+                            %span.amount $20.00
+                          %li
+                            %a{:href => "#", :title => ""}
+                              %img{:alt => "product", :src => "http://placehold.it/70x70"}/
+                              Ellents Style Grade
+                            %span.amount $20.00
+                %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-depth-1.menu-item-with-widget-area.fill-two-columns
+                  %a{:href => "#"} Featured Blog
+                  .menu-item-widget-area-container
+                    %ul
+                      %li.widget.widget_recent_entries
+                        .entry-thumb
+                          %a{:href => "blog-detail.html"}
+                            %img{:alt => "", :src => "http://placehold.it/200x137", :title => ""}/
+                        .entry-body
+                          %p Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+                        .entry-details
+                          .entry-title
+                            %h5
+                              %a{:href => "blog-detail.html"} Create your Works
+                          .entry-metadata
+                            %p.author
+                              %a{:href => "#"} By Admin
+                            %span |
+                            %p.comments
+                              %a{:href => "#"}
+                                %span.fa.fa-comment
+                            %p.date 10 Aug
+                      %li.widget.widget_recent_entries
+                        .entry-thumb
+                          %a{:href => "blog-detail.html"}
+                            %img{:alt => "", :src => "http://placehold.it/200x137", :title => ""}/
+                        .entry-body
+                          %p Minima ve nostrum exercita tionem ullam corporis suscipit laboriosam, nisi ut aliquid ex.
+                        .entry-details
+                          .entry-title
+                            %h5
+                              %a{:href => "blog-detail.html"} Best of the Blogs
+                          .entry-metadata
+                            %p.author
+                              %a{:href => "#"} By Admin
+                            %span |
+                            %p.comments
+                              %a{:href => "#"}
+                                %span.fa.fa-comment
+                            %p.date 10 Aug
+            %a.dt-menu-expand +
+          %li.menu-item-simple-parent.menu-item-depth-0.lavender
+            %a{:href => "blog.html", :title => ""} Blog
+            %ul.sub-menu
+              %li
+                %a{:href => "blog-two-column.html"} Blog Two Column
+                %ul.sub-menu
+                  %li
+                    %a{:href => "blog-two-column-with-sidebar.html"} With Sidebar
+                %a.dt-menu-expand +
+              %li
+                %a{:href => "blog.html"} Blog One Column
+                %ul.sub-menu
+                  %li
+                    %a{:href => "blog-with-sidebar.html"} With Sidebar
+                %a.dt-menu-expand +
+            %a.dt-menu-expand +
+          %li.purple
+            %a{:href => "shop.html", :title => ""} Shop
+          %li.pink
+            %a{:href => "contact.html", :title => ""} Contact us
+      / nav ends
+      %ul.dt-sc-social-icons
+        %li
+          %a.dt-sc-tooltip-top.facebook{:href => "#", :title => "Facebook"}
+            %span.fa.fa-facebook
+        %li
+          %a.dt-sc-tooltip-top.youtube{:href => "#", :title => "Youtube"}
+            %span.fa.fa-youtube
+        %li
+          %a.dt-sc-tooltip-top.twitter{:href => "#", :title => "Twitter"}
+            %span.fa.fa-twitter
+        %li
+          %a.dt-sc-tooltip-top.gplus{:href => "#", :title => "Google Plus"}
+            %span.fa.fa-google-plus
+  / menu-container ends
+/ header ends

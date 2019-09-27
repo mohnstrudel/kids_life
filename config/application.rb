@@ -31,5 +31,7 @@ module KidsLife
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.secret_key_base = Figaro.env.secret_key_base
   end
 end
