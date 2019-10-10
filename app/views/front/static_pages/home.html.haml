@@ -3,7 +3,7 @@
   #slider
     #layerslider_4.ls-wp-container{:style => "width:100%;height:610px;max-width:1920px;margin:0 auto;margin-bottom: 0px;"}
       .ls-slide{"data-ls" => "slidedelay:7000; transition2d: all;"}
-        %img.ls-bg{:alt => "Slide background", :src => "http://placehold.it/1920x610/000000"}/
+        %img.ls-bg{:alt => "Slide background", :src => asset_path("bg3.jpg")}/
         %img.ls-l{:alt => "", "data-ls" => "offsetxin:0;delayin:800;easingin:easeOutElastic;skewxin:30;skewyin:30;transformoriginin:50% 0% 50%;offsetxout:0;parallaxlevel:1;", :src => asset_path("defaults/layerslider-gallery/bring.png"), :style => "top:120px;left:530px;white-space: nowrap;"}/
         %img.ls-l{:alt => "", "data-ls" => "offsetxin:0;offsetyin:80;delayin:500;offsetxout:0;offsetyout:-80;", :src => asset_path("defaults/layerslider-gallery/grass.png"), :style => "top:420px;left:-430px;z-index:100;white-space: nowrap;"}/
         %img.ls-l{:alt => "", "data-ls" => "offsetxin:2;delayin:1000;rotatexin:90;rotateyin:90;offsetxout:0;parallaxlevel:-1;", :src => asset_path("defaults/layerslider-gallery/fun.png"), :style => "top:185px;left:530px;white-space: nowrap;"}/
@@ -55,219 +55,14 @@
   / slider ends
   / primary starts
   %section#primary.content-full-width
-    / container starts
-    .container
-      .dt-sc-one-fourth.column.first
-        .dt-sc-ico-content.type1
-          .icon
-            %span.icon-outer
-              %img{:alt => "", :src => "http://placehold.it/128x128", :title => ""}/
-              %span.infolayer
-                %a{:href => "#"}
-                  %i.fa.fa-link
-          %h4
-            %a{:href => ""} Active Learning
-          %p Curabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleo ntesque, eros risus rhoncus libero, invest tibulum nisl ligula
-      .dt-sc-one-fourth.column
-        .dt-sc-ico-content.type1
-          .icon
-            %span.icon-outer
-              %img{:alt => "", :src => "http://placehold.it/128x128", :title => ""}/
-              %span.infolayer
-                %a{:href => "#"}
-                  %i.fa.fa-link
-          %h4
-            %a{:href => ""} Music Class
-          %p Decor ostdcaer urabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, invest tibulum nisl ligula
-      .dt-sc-one-fourth.column
-        .dt-sc-ico-content.type1
-          .icon
-            %span.icon-outer
-              %img{:alt => "", :src => "http://placehold.it/128x128", :title => ""}/
-              %span.infolayer
-                %a{:href => "#"}
-                  %i.fa.fa-link
-          %h4
-            %a{:href => ""} Yoga Class
-          %p Rabitur ultrices posuere mattis. Nam ullamcorper, diam sit  euismod pelleo ntesque, eros risus rhoncus libero, invest tibulum nisl gedretu osterftra ligula
-      .dt-sc-one-fourth.column
-        .dt-sc-ico-content.type1
-          .icon
-            %span.icon-outer
-              %img{:alt => "", :src => "http://placehold.it/128x128", :title => ""}/
-              %span.infolayer
-                %a{:href => "#"}
-                  %i.fa.fa-link
-          %h4
-            %a{:href => ""} Kung fu Class
-          %p Curabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleo ntesque, eros risus rhoncus libero, invest tibulum nisl ligula
-    / container ends
+    =render partial: 'front/static_pages/home_partials/services'
     .dt-sc-hr
     / fullwidth-background starts
     %section.fullwidth-background.dt-sc-parallax-section.turquoise-bg
-      / container starts
-      .container
-        / dt-sc-one-half starts
-        .dt-sc-one-half.column.first
-          %h2 Play As You Learn
-          / dt-sc-one-half starts
-          .dt-sc-one-half.column.first
-            .dt-sc-ico-content.type2
-              .icon
-                %span.fa.fa-glass
-              %h4
-                %a{:href => "#", :target => "_blank"} English Summer Camp
-              %p Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....
-            .dt-sc-hr-very-small
-            .dt-sc-ico-content.type2
-              .icon
-                %span.fa.fa-pencil
-              %h4
-                %a{:href => "#", :target => "_blank"} Drawing &amp; Painting
-              %p Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....
-            .dt-sc-hr-very-small
-            .dt-sc-ico-content.type2
-              .icon
-                %span.fa.fa-bullseye
-              %h4
-                %a{:href => "#", :target => "_blank"} Swimming Camp
-              %p Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....
-          / dt-sc-one-half ends
-          / dt-sc-one-half starts
-          .dt-sc-one-half.column
-            .dt-sc-ico-content.type2
-              .icon
-                %span.fa.fa-tachometer
-              %h4
-                %a{:href => "#", :target => "_blank"} Sports Camp
-              %p Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....
-            .dt-sc-hr-very-small
-            .dt-sc-ico-content.type2
-              .icon
-                %span.fa.fa-magic
-              %h4
-                %a{:href => "#", :target => "_blank"} Personalizing
-              %p Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....
-            .dt-sc-hr-very-small
-            .dt-sc-ico-content.type2
-              .icon
-                %span.fa.fa-music
-              %h4
-                %a{:href => "#", :target => "_blank"} Sing &amp; Dance
-              %p Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, inst tibulum nisl ligula....
-          / dt-sc-one-half ends
-        / dt-sc-one-half ends
-        / dt-sc-one-half starts
-        .dt-sc-one-half.column
-          %h2 With Music4Kids, music is child's play!
-          .add-slider-wrapper
-            %ul.add-slider
-              %li
-                %img{:alt => "", :src => "http://placehold.it/464x345", :title => ""}/
-              %li
-                %img{:alt => "", :src => "http://placehold.it/464x345", :title => ""}/
-              %li
-                %img{:alt => "", :src => "http://placehold.it/464x345", :title => ""}/
-        / dt-sc-one-half ends
-      / container ends
+      =render partial: 'front/static_pages/home_partials/services_description'
     / fullwidth-background ends
     .dt-sc-hr
-    / container starts
-    .container
-      %h2.dt-sc-hr-green-title Our Portfolio
-      / portfolio-content starts
-      .front-portfolio-container
-        .portfolio-content.portfolio-content1
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .portfolio-content.portfolio-content2
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .portfolio-content.portfolio-content3
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .portfolio-content.portfolio-content4
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .portfolio-content.portfolio-content5
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .portfolio-content.portfolio-content6
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .portfolio-content.portfolio-content7
-          .front-portfolio
-            .portfolio-outer
-              .portfolio-thumb
-                %img{:alt => "", :src => "http://placehold.it/1170x1016", :title => ""}/
-                .image-overlay
-                  %h5
-                    %a{:href => "portfolio-detail.html"} Gifts at Large
-                  %a.link{:href => "portfolio-detail.html"}
-                    %span.fa.fa-link
-                  %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => "http://placehold.it/1170x1016"}
-                    %span.fa.fa-search
-        .dt-sc-hr-small
-        .aligncenter
-          %a.dt-sc-button.medium.mustard{:href => "#"}
-            Hit here to view all
-            %span.fa.fa-chevron-circle-right
-      / front-portfolio-container ends
-    / container ends
+    =render partial: 'front/static_pages/home_partials/portfolio'
     .dt-sc-hr
     / fullwidth-background starts
     %section.fullwidth-background.dt-sc-parallax-section.orange-bg
@@ -400,59 +195,6 @@
             %p Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.
     / container ends
     .dt-sc-hr
-    / fullwidth-background starts
-    %section.fullwidth-background.dt-sc-parallax-section.product_bg
-      / container starts
-      .container
-        %h2.dt-sc-hr-white-title Recent Products
-        %ul.products
-          %li.dt-sc-one-fourth.column.first
-            .product-thumb
-              %a{:href => "#"}
-                %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-              %span.sale Sale!
-              .image-overlay
-                .product-button
-                  %a.add-cart-btn{:href => "#"} Add to cart
-            .product-details
-              %h5
-                %a{:href => "#"} Ellents Style Grade
-              %span.price $20.00
-          %li.dt-sc-one-fourth.column
-            .product-thumb
-              %a{:href => "#"}
-                %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-              .image-overlay
-                .product-button
-                  %a.add-cart-btn{:href => "#"} Add to cart
-            .product-details
-              %h5
-                %a{:href => "#"} Ellents Style Grade
-              %span.price $20.00
-          %li.dt-sc-one-fourth.column
-            .product-thumb
-              %a{:href => "#"}
-                %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-              %span.sale Sale!
-              .image-overlay
-                .product-button
-                  %a.add-cart-btn{:href => "#"} Add to cart
-            .product-details
-              %h5
-                %a{:href => "#"} Ellents Style Grade
-              %span.price $20.00
-          %li.dt-sc-one-fourth.column
-            .product-thumb
-              %a{:href => "#"}
-                %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-              .image-overlay
-                .product-button
-                  %a.add-cart-btn{:href => "#"} Add to cart
-            .product-details
-              %h5
-                %a{:href => "#"} Ellents Style Grade
-              %span.price $20.00
-      / container ends
-    / fullwidth-background ends
+    =render partial: "front/static_pages/home_partials/contact"
   / primary ends
 / main ends

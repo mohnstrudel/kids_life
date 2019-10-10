@@ -506,7 +506,7 @@ header #menu-container ul.dt-sc-social-icons{float:right; height:60px;}
 
 #secondary{width:220px; margin:80px 0px 0px 0px; float:left; padding:0px;}
 
-#main .dt-sc-hr-green-title{text-align:center; width:100%; background:asset-path('defaults/green_title_bg.png') center bottom no-repeat; display:inline-block; padding:0px 0px 30px; margin:0px 0px 30px; line-height:inherit;}
+#main .dt-sc-hr-green-title{text-align:center; width:100%; background:url(asset-path('defaults/green_title_bg.png')) center bottom no-repeat; display:inline-block; padding:0px 0px 30px; margin:0px 0px 30px; line-height:inherit;}
 
 #main .dt-sc-hr-white-title{text-align:center; color:#FFFFFF; width:100%; background:asset-path('defaults/white_title_bg.png') center bottom no-repeat; display:inline-block; padding:0px 0px 30px; margin:0px 0px 30px; line-height:inherit;}
 
@@ -534,7 +534,7 @@ header #menu-container ul.dt-sc-social-icons{float:right; height:60px;}
 
 /**fullwidth-background**/
 
-.fullwidth-background{float:left; clear:both; width:100%; margin:0px; padding:78px 0px; background-image:url(http://placehold.it/1920x436); background-position:center center; background-repeat:repeat; background-attachment:fixed;}
+.fullwidth-background{float:left; clear:both; width:100%; margin:0px; padding:78px 0px; background-image:url(asset-path('static/cloud-bg.png')); background-position:center center; background-repeat:repeat; background-attachment:fixed;}
 
 .fullwidth-background.turquoise-bg h2{color:#FFFFFF; text-transform:capitalize;}
 
@@ -546,13 +546,13 @@ header #menu-container ul.dt-sc-social-icons{float:right; height:60px;}
 
 .fullwidth-background.turquoise-plain-bg{width:100%; padding:78px 0px; float:left; clear:both;}
 
-.fullwidth-background.product_bg{background:url(http://placehold.it/1920x717) center center repeat #d2d2d2;}
+.fullwidth-background.product_bg{background:url(asset-path('static/product_bg.png')) center center repeat #d2d2d2;}
 
 /*--------------------------------------------------------------
 4.2 - Add Slider Styles
 --------------------------------------------------------------*/
 
-.add-slider-wrapper{background-image:asset-path('defaults/add_bg.png'); padding:8% 9% 0px 8.8%; background-size:contain; background-repeat:no-repeat;}
+.add-slider-wrapper{background-image:url(asset-path('defaults/add_bg.png')); padding:8% 9% 0px 8.8%; background-size:contain; background-repeat:no-repeat;}
 
 .add-slider-wrapper iframe{overflow:hidden;}
 

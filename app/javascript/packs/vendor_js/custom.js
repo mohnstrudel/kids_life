@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 		});
 
 
-	$("html").niceScroll({zindex:99999,cursorborder:"1px solid #424242"});
+	// $("html").niceScroll({zindex:99999,cursorborder:"1px solid #424242"});
 	//STICKY MENU...
 	$("#menu-container").sticky({ topSpacing: 0 });
 	//Mobile Menu
@@ -227,14 +227,14 @@ jQuery(document).ready(function($){
 	}
 
 	//TWITTER TWEETS...
-	$("#tweets_container").tweet({
-		modpath: 'js/twitter/',
-		username: "envato",
-		count: 3,
-		loading_text: "loading tweets...",
-		join_text: '<i class="icon-twitter"></i>',
-		template: "{join} {time}, {text}"
-	});
+	// $("#tweets_container").tweet({
+	// 	modpath: 'js/twitter/',
+	// 	username: "envato",
+	// 	count: 3,
+	// 	loading_text: "loading tweets...",
+	// 	join_text: '<i class="icon-twitter"></i>',
+	// 	template: "{join} {time}, {text}"
+	// });
 
 	//GO TO TOP...
 	var offset = 220;
