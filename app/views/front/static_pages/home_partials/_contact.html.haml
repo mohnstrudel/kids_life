@@ -1,54 +1,18 @@
-/ fullwidth-background starts
-%section.fullwidth-background.dt-sc-parallax-section.product_bg
-  / container starts
-  .container
-    %h2.dt-sc-hr-white-title Recent Products
-    %ul.products
-      %li.dt-sc-one-fourth.column.first
-        .product-thumb
-          %a{:href => "#"}
-            %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-          %span.sale Sale!
-          .image-overlay
-            .product-button
-              %a.add-cart-btn{:href => "#"} Add to cart
-        .product-details
-          %h5
-            %a{:href => "#"} Ellents Style Grade
-          %span.price $20.00
-      %li.dt-sc-one-fourth.column
-        .product-thumb
-          %a{:href => "#"}
-            %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-          .image-overlay
-            .product-button
-              %a.add-cart-btn{:href => "#"} Add to cart
-        .product-details
-          %h5
-            %a{:href => "#"} Ellents Style Grade
-          %span.price $20.00
-      %li.dt-sc-one-fourth.column
-        .product-thumb
-          %a{:href => "#"}
-            %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-          %span.sale Sale!
-          .image-overlay
-            .product-button
-              %a.add-cart-btn{:href => "#"} Add to cart
-        .product-details
-          %h5
-            %a{:href => "#"} Ellents Style Grade
-          %span.price $20.00
-      %li.dt-sc-one-fourth.column
-        .product-thumb
-          %a{:href => "#"}
-            %img{:alt => "", :src => "http://placehold.it/510x716", :title => ""}/
-          .image-overlay
-            .product-button
-              %a.add-cart-btn{:href => "#"} Add to cart
-        .product-details
-          %h5
-            %a{:href => "#"} Ellents Style Grade
-          %span.price $20.00
-  / container ends
-/ fullwidth-background ends
+/ container starts
+.container
+  / primary starts
+  %section#primary.content-full-width
+    .column.dt-sc-one-column.first.contact_form_outer
+      %form.contact-form{:action => "php/contactmail.php", :method => "post", :name => "frcontact"}
+        %h2 We'd Like to Hear From You!
+        %p.column.dt-sc-one-third.first
+          %input#name{:name => "txtname", :placeholder => "Name", :required => "", :type => "text"}/
+        %p.column.dt-sc-one-third
+          %input#email{:name => "txtemail", :placeholder => "Email ID", :required => "", :type => "email"}/
+        %p.column.dt-sc-one-third
+          %input#subject{:name => "txtsubject", :placeholder => "Subject", :required => "", :type => "text"}/
+        %p
+          %textarea#comment{:name => "txtmessage", :placeholder => "Message"}
+        #ajax_contact_msg
+        %p
+          %input#submit.dt-sc-button.medium{:name => "submit", :type => "submit", :value => "Send Email"}/

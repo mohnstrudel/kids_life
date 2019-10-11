@@ -67,134 +67,14 @@
     / fullwidth-background starts
     %section.fullwidth-background.dt-sc-parallax-section.orange-bg
       / container starts
-      .container
-        %h2.dt-sc-hr-white-title Recent Blog
-        .column.dt-sc-one-half.first
-          %article.blog-entry
-            .blog-entry-inner
-              .entry-meta
-                %a.blog-author{:href => "blog-detail.html"}
-                  %img{:alt => "", :src => "http://placehold.it/90x90", :title => ""}/
-                .date
-                  %span 27
-                  %p
-                    Aug
-                    %br/
-                    2014
-                %a.comments{:href => "#"}
-                  12
-                  %span.fa.fa-comment
-                %a.entry_format{:href => "#"}
-                  %span.fa.fa-picture-o
-              .entry-thumb
-                %a{:href => "blog-detail.html"}
-                  %img{:alt => "", :src => "http://placehold.it/1170x711", :title => ""}/
-              .entry-details
-                .entry-title
-                  %h3
-                    %a{:href => "blog-detail.html"} Activities Improves Mind
-                / entry-metadata ends
-                .entry-body
-                  %p Roin bibendum nibhsds. Nuncsdsd fermdada msit ametadasd consequat. Praes porr nulla sit amet dui lobortis, id venenatis nibh accums.
-                %a.dt-sc-button.small{:href => "blog-detail.html"}
-                  Read More
-                  %span.fa.fa-chevron-circle-right
-        / dt-sc-one-half ends
-        .column.dt-sc-one-half
-          %article.blog-entry
-            .blog-entry-inner
-              .entry-meta
-                %a.blog-author{:href => "blog-detail.html"}
-                  %img{:alt => "", :src => "http://placehold.it/90x90", :title => ""}/
-                .date
-                  %span 27
-                  %p
-                    Aug
-                    %br/
-                    2014
-                %a.comments{:href => "#"}
-                  12
-                  %span.fa.fa-comment
-                %a.entry_format{:href => "#"}
-                  %span.fa.fa-picture-o
-              .entry-thumb
-                %a{:href => "blog-detail.html"}
-                  %img{:alt => "", :src => "http://placehold.it/1170x711", :title => ""}/
-              .entry-details
-                .entry-title
-                  %h3
-                    %a{:href => "blog-detail.html"} Weekly Reader Zone
-                / entry-metadata ends
-                .entry-body
-                  %p Iid venenatis nibh accums. Doinbibe ndum nibhsds. Nuncsdsd fermdada msit ametadasd consequat. Praes porr nulla sit amet dui lobortis, id venenatis nibh accumsan...
-                %a.dt-sc-button.small{:href => "blog-detail.html"}
-                  Read More
-                  %span.fa.fa-chevron-circle-right
-        / dt-sc-one-half ends
+      / =render partial: "front/static_pages/home_partials/blog"
+      =render partial: "front/static_pages/home_partials/contact"
+      / dt-sc-one-half ends
       / container ends
     / fullwidth-background ends
     .dt-sc-hr
-    / container starts
-    .container
-      %h2.dt-sc-hr-green-title Our Staffs
-      .column.dt-sc-one-fourth.first
-        .dt-sc-team
-          .image
-            %img.item-mask{:alt => "", :src => asset_path("defaults/mask.png"), :title => ""}/
-            %img{:alt => "", :src => "http://placehold.it/381x331", :title => ""}/
-            .dt-sc-image-overlay
-              %a.link{:href => "#"}
-                %span.fa.fa-link
-              %a.zoom{:href => "#"}
-                %span.fa.fa-search
-          .team-details
-            %h4 Jack Daniels
-            %h6 Senior Supervisor
-            %p Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.
-      .column.dt-sc-one-fourth
-        .dt-sc-team
-          .image
-            %img.item-mask{:alt => "", :src => asset_path("defaults/mask.png"), :title => ""}/
-            %img{:alt => "", :src => "http://placehold.it/381x331", :title => ""}/
-            .dt-sc-image-overlay
-              %a.link{:href => "#"}
-                %span.fa.fa-link
-              %a.zoom{:href => "#"}
-                %span.fa.fa-search
-          .team-details
-            %h4 Linda Glendell
-            %h6 Teaching Professor
-            %p Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.
-      .column.dt-sc-one-fourth
-        .dt-sc-team
-          .image
-            %img.item-mask{:alt => "", :src => asset_path("defaults/mask.png"), :title => ""}/
-            %img{:alt => "", :src => "http://placehold.it/381x331", :title => ""}/
-            .dt-sc-image-overlay
-              %a.link{:href => "#"}
-                %span.fa.fa-link
-              %a.zoom{:href => "#"}
-                %span.fa.fa-search
-          .team-details
-            %h4 Kate Dennings
-            %h6 Children Diet
-            %p Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.
-      .column.dt-sc-one-fourth
-        .dt-sc-team
-          .image
-            %img.item-mask{:alt => "", :src => asset_path("defaults/mask.png"), :title => ""}/
-            %img{:alt => "", :src => "http://placehold.it/381x331", :title => ""}/
-            .dt-sc-image-overlay
-              %a.link{:href => "#"}
-                %span.fa.fa-link
-              %a.zoom{:href => "#"}
-                %span.fa.fa-search
-          .team-details
-            %h4 Kristof Slinghot
-            %h6 Management
-            %p Phasellus lorem augue, vulputate vel orci id, ultricies aliquet risus.
-    / container ends
-    .dt-sc-hr
-    =render partial: "front/static_pages/home_partials/contact"
+    =render partial: "front/static_pages/home_partials/staff"
+    / .dt-sc-hr
+
   / primary ends
 / main ends

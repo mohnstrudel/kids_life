@@ -582,7 +582,7 @@ header #menu-container ul.dt-sc-social-icons{float:right; height:60px;}
 
 .about-slider-wrapper .bx-pager.bx-default-pager{display:none;}
 
-.about-slider-wrapper .bx-controls-direction a{position:absolute; z-index:9; top:0; bottom:0; margin:auto; background:asset-path('defaults/arrow.png') 0px 0px no-repeat; text-indent:-9999px; width:36px; height:36px;}
+.about-slider-wrapper .bx-controls-direction a{position:absolute; z-index:9; top:0; bottom:0; margin:auto; background:url(asset-path('defaults/arrow.png')) 0px 0px no-repeat; text-indent:-9999px; width:36px; height:36px;}
 
 .about-slider-wrapper .bx-controls-direction a.bx-prev{left:10px; background-position:left top;}
 
@@ -817,9 +817,9 @@ margin:auto;}
 
 .portfolio-slider-container .bx-controls-direction a:hover{opacity:0.8;}
 
-.portfolio-slider-container .bx-controls-direction a.bx-prev{background:asset-path('defaults/portfolio-slider-arrow-left.png') center center no-repeat #008c99; left:0px;}
+.portfolio-slider-container .bx-controls-direction a.bx-prev{background:url(asset-path('defaults/portfolio-slider-arrow-left.png')) center center no-repeat #008c99; left:0px;}
 
-.portfolio-slider-container .bx-controls-direction a.bx-next{background:asset-path('defaults/portfolio-slider-arrow-right.png') center center no-repeat #008c99; right:0px;}
+.portfolio-slider-container .bx-controls-direction a.bx-next{background:url(asset-path('defaults/portfolio-slider-arrow-right.png')) center center no-repeat #008c99; right:0px;}
 
 .portfolio-slider-container .bx-pager.bx-default-pager .bx-pager-item a{display:none;}
 
@@ -907,7 +907,7 @@ margin:auto;}
 
 .date span{font-size:26px; font-weight:bold;}
 
-.date:before, .comments:before, .entry_format:before{content:""; background:asset-path('defaults/green-meta-arrow.png') left center no-repeat; float:left; width:15px; height:39px; margin:0px 0px 0px 0px; position:absolute;
+.date:before, .comments:before, .entry_format:before{content:""; background:url(asset-path('defaults/green-meta-arrow.png')) left center no-repeat; float:left; width:15px; height:39px; margin:0px 0px 0px 0px; position:absolute;
 top:0px; left:-15px;}
 
 .entry-thumb{border:5px solid #008c99; margin-bottom:30px; display:block;}
@@ -1128,7 +1128,7 @@ ol.commentlist .comment_container{float:left; margin-right:20px; max-width:60px;
 
 .audio-list h5 a{color:#1f1f1f;}
 
-.audio-list h5{display:block; background:asset-path('defaults/audio-bg.png') 0px center repeat-x;}
+.audio-list h5{display:block; background:url(asset-path('defaults/audio-bg.png')) 0px center repeat-x;}
 
 .audio-list .fa{font-size:16px;}
 
@@ -1140,7 +1140,7 @@ ol.commentlist .comment_container{float:left; margin-right:20px; max-width:60px;
 
 /**author**/
 
-.author-rating{background:asset-path('defaults/rating.png') no-repeat; width:77px; height:13px; display:inline-block;}
+.author-rating{background:url(asset-path('defaults/rating.png')) no-repeat; width:77px; height:13px; display:inline-block;}
 
 .author-rating.rating-4{background-position:0px -20px;}
 
@@ -1170,7 +1170,7 @@ ol.commentlist .comment_container{float:left; margin-right:20px; max-width:60px;
 
 .dt-sc-contact-info i{display:inline-block; font-size:20px; margin:2px 15px 10px 0px; float:left;}
 
-.contact_form_outer{background: asset-path('defaults/contact_form_bg.png') -20px 0px; box-shadow:0px 5px 5px 0px rgba(100, 100, 100, 0.20); -webkit-box-shadow:0px 5px 5px 0px rgba(100, 100, 100, 0.20); -moz-box-shadow:0px 5px 5px 0px rgba(100, 100, 100, 0.20); padding:5px; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
+.contact_form_outer{background:url(asset-path('defaults/contact_form_bg.png')) -20px 0px; box-shadow:0px 5px 5px 0px rgba(100, 100, 100, 0.20); -webkit-box-shadow:0px 5px 5px 0px rgba(100, 100, 100, 0.20); -moz-box-shadow:0px 5px 5px 0px rgba(100, 100, 100, 0.20); padding:5px; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
 
 .contact-form{background:#FFFFFF; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; padding:30px 30px 10px; box-shadow:inset 0px 3px 3px 0px rgba(0, 0, 0, 0.1); -webkit-box-shadow:inset 0px 3px 3px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow:inset 0px 3px 3px 0px rgba(0, 0, 0, 0.1);}
 
@@ -1214,9 +1214,9 @@ ul.class_hours li span{font-style:italic; font-weight:normal; color:#cf571b; flo
 11.0 - Footer Styles
 --------------------------------------------------------------*/
 
-footer{width:100%; margin:0px; padding:65px 0px 0px; float:left; clear:both; background-image:asset-path('defaults/footer_bg.png'); background-color:#FFFFFF; position:relative; background-position:center top;}
+footer{width:100%; margin:0px; padding:65px 0px 0px; float:left; clear:both; background-image:url(asset-path('static/footer_bg.png')); background-color:#FFFFFF; position:relative; background-position:center top;}
 
-footer:before{content:""; background:asset-path('defaults/footer_top_bg.png') center top no-repeat; position:absolute; top:-46px; left:0px; width:100%; height:46px; background-size:cover;}
+footer:before{content:""; background:url(asset-path('static/footer_top_bg.png')) center top no-repeat; position:absolute; top:-46px; left:0px; width:100%; height:46px; background-size:cover;}
 
 .footer-widgets-wrapper{padding-bottom:20px; width:100%; clear:both; float:left;}
 
@@ -1224,13 +1224,13 @@ footer:before{content:""; background:asset-path('defaults/footer_top_bg.png') ce
 
 footer h3.widgettitle{padding-bottom:25px;}
 
-footer h3.widgettitle.red_sketch{background:asset-path('defaults/red_sketch.png') left bottom no-repeat;}
+footer h3.widgettitle.red_sketch{background:url(asset-path('defaults/red_sketch.png')) left bottom no-repeat;}
 
-footer h3.widgettitle.green_sketch{background:asset-path('defaults/green_sketch.png') left bottom no-repeat;}
+footer h3.widgettitle.green_sketch{background:url(asset-path('defaults/green_sketch.png')) left bottom no-repeat;}
 
-footer h3.widgettitle.yellow_sketch{background:asset-path('defaults/yellow_sketch.png') left bottom no-repeat;}
+footer h3.widgettitle.yellow_sketch{background:url(asset-path('defaults/yellow_sketch.png')) left bottom no-repeat;}
 
-footer h3.widgettitle.steelblue_sketch{background:asset-path('defaults/steelblue_sketch.png') left bottom no-repeat;}
+footer h3.widgettitle.steelblue_sketch{background:url(asset-path('defaults/steelblue_sketch.png')) left bottom no-repeat;}
 
 h3.widgettitle{font-size:22px; padding-bottom:10px; margin-bottom:25px; text-transform:capitalize;}
 
@@ -1268,7 +1268,7 @@ footer #tweets_container ul.tweet_list{overflow:hidden;}
 
 footer #tweets_container ul.tweet_list li{clear:both; display:block; padding-left:30px;}
 
-footer #tweets_container li:before{content:""; background:asset-path('defaults/twitter_icon.png') no-repeat; float:left; width:21px; height:15px; margin:5px 0px 0px -30px;}
+footer #tweets_container li:before{content:""; background:url(asset-path('defaults/twitter_icon.png')) no-repeat; float:left; width:21px; height:15px; margin:5px 0px 0px -30px;}
 
 footer .dt-sc-contact-info{clear:both; float:left; width:100%; margin:0px 0px 10px; padding:0px; border:0px;}
 
@@ -1288,7 +1288,7 @@ footer .dt-sc-contact-info span{font-size:18px; float:left; margin:2px 10px 0px 
 
 .widget .mailchimp-form input[type="submit"]:hover{background:#df9b00; border:1px solid #df9b00;}
 
-.copyright{clear:both; float:left; width:100%; margin:0px; padding:15px 0px 10px; background:asset-path('defaults/footer_strip.jpg') center top repeat-x #008c99;}
+.copyright{clear:both; float:left; width:100%; margin:0px; padding:15px 0px 10px; background:url(asset-path('defaults/footer_strip.jpg')) center top repeat-x #008c99;}
 
 .copyright p{float:left; color:#FFF;}
 
@@ -1312,7 +1312,7 @@ footer .dt-sc-contact-info span{font-size:18px; float:left; margin:2px 10px 0px 
 
 .copyright .footer-links ul li.pinterest:hover a, .class_hours ul.dt-sc-social-icons li.pinterest a{background:#ca1325;}
 
-footer .footer-links p{float:left; background:asset-path('defaults/footer_arrow.png') right 7px no-repeat; padding:0px 50px 0px 0px; margin:7px 15px 0px 0px;}
+footer .footer-links p{float:left; background:url(asset-path('defaults/footer_arrow.png')) right 7px no-repeat; padding:0px 50px 0px 0px; margin:7px 15px 0px 0px;}
 
 .copyright .copyright-info{margin:0px; line-height:35px;}
 
