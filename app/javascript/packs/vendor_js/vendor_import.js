@@ -9,6 +9,7 @@ require("./validation.js");
 require("./jquery.tipTip.minified.js");
 require("./jquery.bxslider.min.js");
 require("./jquery.prettyPhoto.js");
+
 require("./twitter/jquery.tweet.min.js");
 require("./jquery.parallax-1.1.3.js");
 require("./shortcodes.js");

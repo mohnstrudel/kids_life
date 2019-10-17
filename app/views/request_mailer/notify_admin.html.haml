@@ -1,0 +1,10 @@
+%h2 Новый запрос на сайте SKAZKA-SHOW.RU
+
+%p="Имя: #{@request.name}"
+
+%p="Телефон: #{@request.phone}"
+
+-if @request.email.present?
+  %p="Email: #{@request.email}"
+
+%p="Текст сообщения: #{@request.body}"

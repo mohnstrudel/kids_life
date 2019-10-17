@@ -3,14 +3,15 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-
+// Intern
 require("@rails/ujs").start()
+require("jquery")
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
 // Custom
-require("jquery")
+
 require('./vendor_js/vendor_import.js')
 
 // Uncomment to copy all static images under ../images to the output folder and reference

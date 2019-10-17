@@ -1,0 +1,14 @@
+var cf = $('#contact-form');
+cf.append('<div class="dt-sc-titled-box"></div>');
+
+text = "Спасибо за Ваше обращение! Мы его получили.";
+
+cf.find('input:not([type="submit"]),textarea').val('');
+
+$('.dt-sc-titled-box').html('<h4 class="dt-sc-titled-box-title">Все удачно :) </h4><div class="dt-sc-titled-box-content"><p>'+text+'</p></div>')
+  .delay(150)
+  .slideDown(300)
+  .delay(4000)
+  .slideUp(300,function(){
+    $(this).html("");
+  });

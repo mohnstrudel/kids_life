@@ -76,7 +76,7 @@ Rails.application.configure do
    domain: Figaro.env.hostname,
    address: Figaro.env.mailer_address,
    port: 465,
-   authentication: :plain,
+   authentication: :login,
    # enable_starttls_auto: true,
    tls: true
   }

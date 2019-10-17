@@ -1,0 +1,16 @@
+var cf = $('#contact-form');
+cf.append('<div class="dt-sc-titled-box mustard"></div>');
+
+if(cf.find('textarea').val().length < 20){
+  text = "Сообщение слишком короткое..."
+}
+if(cf.find('input').val() == ""){
+  text = "Все поля должны быть заполнены";
+}
+$('.dt-sc-titled-box .mustard').html('<h4 class="dt-sc-titled-box-title">Ошибка </h4><div class="dt-sc-titled-box-content"><p>'+text+'</p></div>')
+  .delay(150)
+  .slideDown(300)
+  .delay(4000)
+  .slideUp(300,function(){
+    $(this).html("");
+  });

@@ -3,16 +3,14 @@
   / primary starts
   %section#primary.content-full-width
     .column.dt-sc-one-column.first.contact_form_outer
-      %form.contact-form{:action => "php/contactmail.php", :method => "post", :name => "frcontact"}
-        %h2 We'd Like to Hear From You!
-        %p.column.dt-sc-one-third.first
-          %input#name{:name => "txtname", :placeholder => "Name", :required => "", :type => "text"}/
-        %p.column.dt-sc-one-third
-          %input#email{:name => "txtemail", :placeholder => "Email ID", :required => "", :type => "email"}/
-        %p.column.dt-sc-one-third
-          %input#subject{:name => "txtsubject", :placeholder => "Subject", :required => "", :type => "text"}/
+      =form_with model: Request.new, class: 'contact-form', id: 'contact-form' do |f|
+        %h2 Напишите нам!
+        %p.column.dt-sc-one-half.first
+          =f.text_field :name, placeholder: 'Ваше имя', id: 'name'
+        %p.column.dt-sc-one-half
+          =f.text_field :phone, placeholder: 'Телефон', id: 'phone'
         %p
-          %textarea#comment{:name => "txtmessage", :placeholder => "Message"}
+          =f.text_area :body, placeholder: 'Ваша идея праздника', id: 'comment'
         #ajax_contact_msg
         %p
-          %input#submit.dt-sc-button.medium{:name => "submit", :type => "submit", :value => "Send Email"}/
+          =f.submit 'Отправить', class: 'dt-sc-button medium', id: 'submit'
