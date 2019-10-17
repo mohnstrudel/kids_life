@@ -15,7 +15,12 @@ require("./jquery.parallax-1.1.3.js");
 require("./shortcodes.js");
 require("./custom.js");
 
-require("./jquery-transit-modified.js");
-require("./layerslider.kreaturamedia.jquery.js");
-require("./greensock.js");
-require("./layerslider.transitions.js");
+// Layerslider
+// require("./jquery-transit-modified.js");
+// require("./layerslider.kreaturamedia.jquery.js");
+// require("./greensock.js");
+// require("./layerslider.transitions.js");
+// require("./layerslider.custom.js");
+
+// Carousel
+require("./slick-carousel.custom.js");
