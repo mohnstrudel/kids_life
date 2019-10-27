@@ -6,10 +6,11 @@
         %img{:alt => "Kids Life", :src => asset_path("defaults/logo.png"), :title => "Kids Life"}/
     .contact-details
       %p.mail
-        %a{:href => "#"} contact@kidslife.com
+        %a{:href => "mailto:info@skazka-show.ru"} info@skazka-show.ru
         %span.fa.fa-envelope
       %p.phone-no
-        %i +1 959 552 5963
+        %i
+          %a{href: "tel:+79031303664"}+7 (903) 130-36-64
         %span.fa.fa-phone
   / menu-container starts
   #menu-container
@@ -21,15 +22,15 @@
           %span.dt-menu-toggle-icon
         %ul#menu-main-menu.menu
           %li.current_page_item.menu-item-simple-parent.menu-item-depth-0.red
-            %a{:href => "index.html"} Главная
+            %a{:href => root_path} Главная
           %li.mustard
-            %a{:href => "about.html"} О нас
+            %a{:href => "#about"} О нас
           %li.green
-            %a{:href => "our-staffs.html"} Наша команда
+            %a{:href => "#our-staff"} Наша команда
           %li.yellow
-            %a{:href => "services.html"} Услуги
+            %a{:href => "#services"} Услуги
           %li.steelblue
-            %a{:href => "#", :title => ""} Связаться с нами
+            %a{:href => "#contact", :title => ""} Связаться с нами
       / nav ends
       %ul.dt-sc-social-icons
         %li
@@ -39,10 +40,10 @@
           %a.dt-sc-tooltip-top.youtube{:href => "#", :title => "Youtube"}
             %span.fa.fa-youtube
         %li
-          %a.dt-sc-tooltip-top.twitter{:href => "#", :title => "Twitter"}
-            %span.fa.fa-twitter
-        %li
-          %a.dt-sc-tooltip-top.gplus{:href => "#", :title => "Google Plus"}
-            %span.fa.fa-google-plus
+          %a.dt-sc-tooltip-top.instagram{:href => "https://instagram.com/skazkashow.msk", :title => "Instagram", target: '_blank'}
+            %span.fa.fa-instagram
+        / %li
+        /   %a.dt-sc-tooltip-top.gplus{:href => "#", :title => "Google Plus"}
+        /     %span.fa.fa-google-plus
   / menu-container ends
 / header ends
