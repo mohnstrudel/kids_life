@@ -6,12 +6,21 @@
   / primary starts
   %section#primary.content-full-width
     #services
-      =render partial: 'front/static_pages/home_partials/services'
+      =render partial: 'front/static_pages/home_partials/introduction'
     .dt-sc-hr
+    / fullwidth_banner starts
+  %section
+    .container
+      %h1{style: "text-align: center; color: #F1F3F3;"} Услуги
+    / fullwidth_banner ends
+    / primary starts
+  %section#primary.content-full-width
+    =render partial: 'front/static_pages/home_partials/services'
     / fullwidth-background starts
     / %section.fullwidth-background.dt-sc-parallax-section.turquoise-bg
     / =render partial: 'front/static_pages/home_partials/services_description'
     / fullwidth-background ends
+  %section.fullwidth_banner
     .dt-sc-hr
     =render partial: 'front/static_pages/home_partials/portfolio'
     .dt-sc-hr
@@ -27,5 +36,5 @@
     / =render partial: "front/static_pages/home_partials/staff"
     / .dt-sc-hr
 
-  / primary ends
-/ main ends
+    / primary ends
+    / main ends
