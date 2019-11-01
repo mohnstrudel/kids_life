@@ -4,45 +4,43 @@
   .footer-widgets-wrapper
     / container starts
     .container
-      .column.dt-sc-one-half.first
+      .column
         %aside.widget.widget_text
           %h3.widgettitle.red_sketch Наши контакты
           %p
-            %strong Сказка Шоу
-            это круто
+            Если вы приняли решение доверить организацию своего праздника нам:
           %ul
             %li
-              %a{:href => ""} Адресочек: г. Москва, ул. Басманная-Фиганная
+              %a{:href => "tel:+79031303664"}Свяжитесь с нами по телефону +7 (903) 130-36-64
             %li
-              %a{:href => ""} Телефончик: 019301382
+              %a{:href => "https://stalker-stories.com/instagram/skazkashow.msk"} Напишите в Instagram Direct @skazkashow.msk
             %li
-              %a{:href => ""} СМСка: 19823192
+              %a{:href => "mailto:info@skazka-show.ru"} Оставьте заявку на электронную почту info@skazka-show.ru
             %li
-              %a{:href => ""} Ватсапчик: 10231982
-            %li
-              %a{:href => ""} Мыльце: jaosdk@asdjioj.com
-      .column.dt-sc-one-half
-        %aside.widget.widget_recent_entries
-          %h3.widgettitle.green_sketch
-          %ul
-            %li
-              %a{:href => ""}
-                %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
-              %h6
-                %a{:href => ""} Пишите нам сюда
-              %span March 23, 2014
-            %li
-              %a{:href => ""}
-                %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
-              %h6
-                %a{:href => ""} Пишите нам туда
-              %span March 23, 2014
-            %li
-              %a{:href => ""}
-                %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
-              %h6
-                %a{:href => ""} Пишите нам оттуда
-              %span March 23, 2014
+              %a{:href => "#contact"} Или просто введите свои данные в форму обратной связи и наш менеджер свяжется с вами в ближайшее время.
+          %p Спасибо, что выбрали “Сказка шоу” - это очень важно для нас!
+      / .column.dt-sc-one-half
+      /   %aside.widget.widget_recent_entries
+      /     %h3.widgettitle.green_sketch
+      /     %ul
+      /       %li
+      /         %a{:href => ""}
+      /           %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
+      /         %h6
+      /           %a{:href => ""} Пишите нам сюда
+      /         %span March 23, 2014
+      /       %li
+      /         %a{:href => ""}
+      /           %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
+      /         %h6
+      /           %a{:href => ""} Пишите нам туда
+      /         %span March 23, 2014
+      /       %li
+      /         %a{:href => ""}
+      /           %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
+      /         %h6
+      /           %a{:href => ""} Пишите нам оттуда
+      /         %span March 23, 2014
       / .column.dt-sc-one-fourth
       /   %aside.widget.tweetbox
       /     %h3.widgettitle.yellow_sketch
@@ -76,21 +74,18 @@
   .copyright
     .container
       %p.copyright-info
-        © 2019 Skazka Show. Все права защищены. Design by
-        %a{:href => "http://themeforest.net/user/designthemes", :title => ""} Buddhathemes
+        © 2019 Skazka Show. Все права защищены. Создание сайта
+        %a{:href => "https://blog.handsomecake.com", :title => "HandsomeCake Studios"} Handsomecake Studios
       .footer-links
-        %p Follow us
+        %p Мы в соцсетях
         %ul.dt-sc-social-icons
-          %li.facebook
+          %li.instagram
+            %a{:href => "https://stalker-stories.com/instagram/skazkashow.msk "}
+              %i.fa.fa-instagram
+          %li.youtube
             %a{:href => "#"}
-              %img{:alt => "", :src => asset_path("defaults/facebook.png"), :title => ""}/
-          %li.twitter
-            %a{:href => "#"}
-              %img{:alt => "", :src => asset_path("defaults/twitter.png"), :title => ""}/
-          %li.gplus
-            %a{:href => "#"}
-              %img{:alt => "", :src => asset_path("defaults/gplus.png"), :title => ""}/
-          %li.pinterest
-            %a{:href => "#"}
-              %img{:alt => "", :src => asset_path("defaults/pinterest.png"), :title => ""}/
+              %i.fa.fa-youtube
+          / %li.pinterest
+          /   %a{:href => "#"}
+          /     %img{:alt => "", :src => asset_path("defaults/pinterest.png"), :title => ""}/
 / footer ends

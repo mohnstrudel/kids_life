@@ -10,3 +10,69 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-3em {
+  padding-bottom: 3em;
+}
+
+.padding-left-2em {
+  padding-left: 3em;
+}
+
+.logo-clown {
+  width: 60px;
+  position: absolute;
+}
+
+.logo-additional {
+  padding-left: 65px;
+}
+
+// .icon-tik-tok {
+//   width: 18px;
+//   z-index: 9999;
+// }
+
+.icon-tik-tok:before {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  content: '';
+  -webkit-mask: url(asset-path('static/tik-tok-icon-black.svg')) no-repeat 50% 50%;
+  mask: url(asset-path('static/tik-tok-icon-black.svg')) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+  margin-top: 1.3em;
+}
+
+// .icon-tik-tok:hover {
+//   fill: #fff;
+// }
+
+.max-height {
+  height: 950px;
+}
+
+.columns-with-white-background {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.footer-links {
+  ul {
+    li {
+      background: white;
+      border-radius: 5px;
+    }
+  }
+}

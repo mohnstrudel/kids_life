@@ -30,7 +30,7 @@
 
 ::selection{background-color:#008c99; color:#FFFFFF;}
 
-body{background:#f0f3f3; color:#5c5c5c; margin:0px; padding:0px; font-family:'Amatic SC', cursive; font-size:22px; line-height:22px;}
+body{background:#f0f3f3; color:#5c5c5c; margin:0px; padding:0px; font-family:'Open Sans', sans-serif; font-size:16px; line-height:16px;}
 
 .container{width:1170px; margin:0 auto;}
 
@@ -64,15 +64,15 @@ ul li, ol li{padding-bottom:10px;}
 
 h1, h2, h3, h4, h5, h6{margin:0px; padding:0px; color:#2f2f2f;}
 
-h1{font-size:32px; margin-bottom:25px;}
+h1{font-size:26px; margin-bottom:25px; font-style: italic;}
 
-h2{font-size:30px; margin-bottom:25px;}
+h2{font-size:24px; margin-bottom:25px; font-style: italic;}
 
-h3{font-size:24px; margin-bottom:15px;}
+h3{font-size:20px; margin-bottom:15px; font-style: italic;}
 
-h4{margin-bottom:20px; font-size:20px;}
+h4{margin-bottom:18px; font-size:20px; font-style: italic;}
 
-h5{font-size:18px; margin-bottom:20px;}
+h5{font-size:18px; margin-bottom:20px; font-style: italic;}
 
 h6{margin-bottom:15px; font-size:16px;}
 
@@ -130,11 +130,11 @@ input.error, textarea.error{padding:15px 18px; border:1px solid #FF0000;}
 2.0 - Font Family
 --------------------------------------------------------------*/
 
-.dt-sc-toggle-frame h5 a, .course h5.dt-sc-toggle-accordion:before, .course h5.dt-sc-toggle-accordion.active:before, h5.dt-sc-toggle a, h5.dt-sc-toggle-accordion a, .product-details h5 a, .front-portfolio .image-overlay h5 a{font-family:'Amatic SC', cursive;}
+.dt-sc-toggle-frame h5 a, .course h5.dt-sc-toggle-accordion:before, .course h5.dt-sc-toggle-accordion.active:before, h5.dt-sc-toggle a, h5.dt-sc-toggle-accordion a, .product-details h5 a, .front-portfolio .image-overlay h5 a{font-family:'Open Sans', sans-serif;}
 
-#main-menu .megamenu-child-container .widget ul.product_list_widget li a, #main-menu .megamenu-child-container .widget ul.product_list_widget li span.amount{font-family:'Amatic SC', cursive;}
+#main-menu .megamenu-child-container .widget ul.product_list_widget li a, #main-menu .megamenu-child-container .widget ul.product_list_widget li span.amount{font-family:'Open Sans', sans-serif;}
 
-h1, h2, h3, h4, h5, h6, .dt-sc-ico-content h4 a, .dt-sc-ico-content.type2 h4 a, .entry-title h3, .dt-sc-team h4, h3.widgettitle, .dt-sc-music-audio h5 a, input[type=text], input[type=email], textarea, .breadcrumb-section h1, .activity h4, .megamenu-child-container > ul.sub-menu > li > a{font-family:'Amatic SC', cursive; font-weight:normal;}
+h1, h2, h3, h4, h5, h6, .dt-sc-ico-content h4 a, .dt-sc-ico-content.type2 h4 a, .entry-title h3, .dt-sc-team h4, h3.widgettitle, .dt-sc-music-audio h5 a, input[type=text], input[type=email], textarea, .breadcrumb-section h1, .activity h4, .megamenu-child-container > ul.sub-menu > li > a{font-family:'Open Sans', sans-serif; font-weight:bold;}
 
 footer .widget.widget_text ul li:before, .portfolio-detail p:before, h5.dt-sc-toggle-accordion:before, h5.dt-sc-toggle:before, .entry-meta .entry_format, .dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before, .dt-sc-toggle-frame h5 a:before, .dt-sc-toggle-frame h5 a:after, .dt-sc-toggle-frame-set .dt-sc-toggle-frame h5.dt-sc-toggle-accordion:after, .dt-sc-toggle-frame-set .dt-sc-toggle-frame h5.dt-sc-toggle:after, ul.dt-sc-fancy-list li:before, header ul.dt-sc-social-icons li a:before{font-family:FontAwesome; font-style:normal; font-weight:normal;}
 
@@ -192,6 +192,19 @@ header ul.dt-sc-social-icons li a.facebook:before{content:"\f09a";}
 
 header ul.dt-sc-social-icons li a.youtube:before{content:"\f167";}
 
+header ul.dt-sc-social-icons li a.icon-tik-tok:before{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  content: '';
+  -webkit-mask: url(asset-path('static/tik-tok-icon-black.svg')) no-repeat 50% 50%;
+  mask: url(asset-path('static/tik-tok-icon-black.svg')) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: black;
+  margin-top: 1.3em;
+}
+
 header ul.dt-sc-social-icons li a.twitter:before{content:"\f099";}
 
 header ul.dt-sc-social-icons li a.gplus:before{content:"\f0d5";}
@@ -202,7 +215,9 @@ header ul.dt-sc-social-icons li a span{width:inherit; padding:0px 10px; height:7
 
 header ul.dt-sc-social-icons li a.facebook span{border-color:#35538f; background:#35538f;}
 
-header ul.dt-sc-social-icons li a.youtube span{border-color:#b70400; background:#b70400;}
+header ul.dt-sc-social-icons li a.icon-tik-tok span{border-color:#000; background:#000;}
+
+header ul.dt-sc-social-icons li a.icon-tik-tok {border-color:#000;}
 
 header ul.dt-sc-social-icons li a.facebook{border-color:#35538f;}
 
@@ -1322,7 +1337,7 @@ footer .footer-links p{float:left; background:url(asset-path('defaults/footer_ar
 
 .copyright .copyright-info{margin:0px; line-height:35px;}
 
-.back-to-top{position:fixed; bottom:8px; right:8px; width:42px; height:43px; line-height:43px; background:url(http://placehold.it/42x43) no-repeat; font-size:10px; text-indent:-9999px; text-align:center; display:none; z-index:9999;}
+.back-to-top{position:fixed; bottom:8px; right:8px; width:42px; height:43px; line-height:43px; background:url(asset-path('static/go_to_top.png')) no-repeat; font-size:10px; text-indent:-9999px; text-align:center; display:none; z-index:9999;}
 
 /*.back-to-top:hover{opacity:0.8;}*/
 
