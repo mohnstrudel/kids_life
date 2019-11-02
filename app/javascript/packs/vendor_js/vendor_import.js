@@ -1,3 +1,4 @@
+require("./jquery.js");
 require("./jquery-migrate.min.js");
 require("./jquery.validate.min.js");
 require("./jquery-easing-1.3.js");

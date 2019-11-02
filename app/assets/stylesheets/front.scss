@@ -5,6 +5,10 @@
 /*
 *= require_tree ../../../app/assets/stylesheets/front/.
 *= require_self
-*= require_tree ../../../vendor/assets/stylesheets/front/.
+*= require front/style
+*= require front/shortcodes
+*= require front/responsive
 *= require font-awesome-override
+*= require front/layerslider
+*= require front/prettyPhoto
 */
