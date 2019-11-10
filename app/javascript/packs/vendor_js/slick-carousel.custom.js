@@ -1,5 +1,9 @@
-$(document).on('ready', function(){
-  $('.your-class').slick({
-    // setting-name: setting-value
-  });
-});
+// // $(document).ready(function(){
+//   console.log("inside slick?");
+//   $('.autoplay').slick({
+
+//     // setting-name: setting-value
+//   });
+
+
+// // });

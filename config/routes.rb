@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   scope module: :front do
     root 'static_pages#home'
 
-    resource :requests
+    get 'contact', to: 'static_pages#contact'
+    resources :requests
+    resources :services
   end
 end

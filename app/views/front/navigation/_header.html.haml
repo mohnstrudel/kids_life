@@ -4,7 +4,7 @@
     .logo
       %img{:alt => "Kids Life", :src => asset_path("static/clown.jpg"), :title => "Kids Life", class: 'logo-clown'}
       .logo-additional
-        %a{:href => root_path, :title => "Kids Life"}
+        =link_to root_path, method: :get do
           %img{:alt => "Kids Life", :src => asset_path("defaults/logo.svg"), :title => "Kids Life", width: 360}/
     .contact-details
       %p.mail
@@ -24,20 +24,20 @@
           %span.dt-menu-toggle-icon
         %ul#menu-main-menu.menu
           %li.current_page_item.menu-item-simple-parent.menu-item-depth-0.red
-            %a{:href => root_path} Главная
+            =link_to 'Главная', root_path, method: :get
           %li.mustard
             %a{:href => "#elza_show"} О нас
-          %li.green
-            %a{:href => "#animator_show"} Наша команда
+          / %li.green
+          /   %a{:href => "#animator_show"} Наша команда
           %li.yellow
-            %a{:href => "#services"} Услуги
+            =link_to 'Услуги', services_path
           %li.steelblue
             %a{:href => "#teambuilding"} Тимбилдинги
           %li.lavender
             %a{:href => "#masterclass"} Мастер-классы
 
           %li.steelblue
-            %a{:href => "#contact", :title => ""} Связаться с нами
+            %a{:href => contact_path, :title => ""} Контакты
       / nav ends
       %ul.dt-sc-social-icons
         %li

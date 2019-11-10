@@ -4,73 +4,89 @@
   .footer-widgets-wrapper
     / container starts
     .container
-      .column
+      .column.dt-sc-one-fourth.first
         %aside.widget.widget_text
-          %h3.widgettitle.red_sketch Наши контакты
+          %h3.widgettitle.red_sketch Сказка Шоу
           %p
-            Если вы приняли решение доверить организацию своего праздника нам:
+            «Сказка Шоу – агентство детских праздников и торжеств. Полное погружение в праздничную атмосферу. Наши преимущества:
           %ul
             %li
-              %a{:href => "tel:+79031303664"}Свяжитесь с нами по телефону +7 (903) 130-36-64
+              %a{:href => ""} высокий уровень организации,
             %li
-              %a{:href => "https://stalker-stories.com/instagram/skazkashow.msk"} Напишите в Instagram Direct @skazkashow.msk
+              %a{:href => ""} лучшие аниматоры,
             %li
-              %a{:href => "mailto:info@skazka-show.ru"} Оставьте заявку на электронную почту info@skazka-show.ru
+              %a{:href => ""} широкий выбор шоу
             %li
-              %a{:href => "#contact"} Или просто введите свои данные в форму обратной связи и наш менеджер свяжется с вами в ближайшее время.
-          %p Спасибо, что выбрали “Сказка шоу” - это очень важно для нас!
-      / .column.dt-sc-one-half
-      /   %aside.widget.widget_recent_entries
-      /     %h3.widgettitle.green_sketch
-      /     %ul
-      /       %li
-      /         %a{:href => ""}
-      /           %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
-      /         %h6
-      /           %a{:href => ""} Пишите нам сюда
-      /         %span March 23, 2014
-      /       %li
-      /         %a{:href => ""}
-      /           %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
-      /         %h6
-      /           %a{:href => ""} Пишите нам туда
-      /         %span March 23, 2014
-      /       %li
-      /         %a{:href => ""}
-      /           %img{:alt => "", :src => "http://placehold.it/60x60", :title => ""}/
-      /         %h6
-      /           %a{:href => ""} Пишите нам оттуда
-      /         %span March 23, 2014
-      / .column.dt-sc-one-fourth
-      /   %aside.widget.tweetbox
-      /     %h3.widgettitle.yellow_sketch
-      /       %a{:href => "#"} Twitter Feeds
-      /     #tweets_container
-      / .column.dt-sc-one-fourth
-      /   %aside.widget.widget_text
-      /     %h3.widgettitle.steelblue_sketch Contact
-      /     .textwidget
-      /       %p.dt-sc-contact-info
-      /         %span.fa.fa-map-marker
-      /         4318 Mansion House, Greenland
-      /         %br/
-      /         United States
-      /       %p.dt-sc-contact-info
-      /         %span.fa.fa-phone
-      /         (000) 233 - 3236
-      /       %p.dt-sc-contact-info
-      /         %span.fa.fa-envelope
-      /         %a{:href => "mailto:yourname@somemail.com"} Kidslife@somemail.com
-      /   %aside.widget.mailchimp
-      /     %p We're social
-      /     %form.mailchimp-form{:action => "php/subscribe.php", :method => "post", :name => "frmnewsletter"}
-      /       %p
-      /         %span.fa.fa-envelope-o
-      /         %input{:name => "mc_email", :placeholder => "Email Address", :required => "", :type => "email"}/
-      /       %input.button{:name => "btnsubscribe", :type => "submit", :value => "Subscribe"}/
-      /     #ajax_subscribe_msg
-    / container ends
-  / footer-widgets-wrapper ends
+              %a{:href => ""} индивидуальный подбор программы
+            %li
+              %a{:href => ""} простой способ заказа
+      .column.dt-sc-one-fourth
+        %aside.widget.widget_recent_entries
+          %h3.widgettitle.green_sketch Услуги
+          %ul
+            %li
+              %a{:href => ""}
+                %img{:alt => "", :src => asset_path('static/wedding.jpg'), :title => ""}/
+                %h6
+                  %a{:href => ""} Свадьбы
+                / %span Просмотреть все
+              %li
+                %a{:href => ""}
+                  %img{:alt => "", :src => asset_path('static/pen_and_paper.jpg'), :title => ""}/
+                  %h6
+                    %a{:href => ""} Праздник в ТРЦ
+                  / %span March 23, 2014
+                %li
+                  %a{:href => ""}
+                    %img{:alt => "", :src => asset_path('static/cake.jpg'), :title => ""}/
+                    %h6
+                      %a{:href => ""} Юбилей
+                    / %span March 23, 2014
+                %li
+                  %a{href: ''}
+                    %img{:alt => "", :src => asset_path('static/kids.jpg'), :title => ""}/
+                    %h6
+                      %a{:href => ""} День рождения
+                    / %span March 23, 2014
+      .column.dt-sc-one-fourth
+        %aside.widget.widget_recent_entries
+          %h3.widgettitle.yellow_sketch
+            %a{:href => ""} Портфолио
+          %ul
+            %li
+              %a{:href => "#portfolio"}
+                %img{:alt => "", :src => asset_path('events/001.jpg'), :title => ""}/
+                %h6
+                  %a{:href => "#portfolio"} Праздник в детском саду
+            %li
+              %a{:href => "#portfolio"}
+                %img{:alt => "", :src => asset_path('events/halloween/1.jpg'), :title => ""}/
+                %h6
+                  %a{:href => "#portfolio"} Хеллоуин
+      .column.dt-sc-one-fourth
+        %aside.widget.widget_text
+          %h3.widgettitle.steelblue_sketch Контакты
+          .textwidget
+            %p.dt-sc-contact-info
+              %span.fa.fa-map-marker
+              4318 Mansion House, Greenland
+              %br United States
+              %p.dt-sc-contact-info
+                %span.fa.fa-phone
+                %a{href: 'tel:+79031303664'}+7 (903) 130-36-64
+              %p.dt-sc-contact-info
+                %span.fa.fa-envelope
+                %a{:href => "mailto:info@skazka-show.ru"} info@skazka-show.ru
+          / %aside.widget.mailchimp
+          /   %p We're social
+          /   %form.mailchimp-form{:action => "php/subscribe.php", :method => "post", :name => "frmnewsletter"}
+          /     %p
+          /       %span.fa.fa-envelope-o
+          /       %input{:name => "mc_email", :placeholder => "Email Address", :type => "email"}/
+          /     %input.button{:name => "btnsubscribe", :type => "submit", :value => "Subscribe"}
+          /     #ajax_subscribe_msg
+        / container ends
+
   .copyright
     .container
       %p.copyright-info

@@ -1,0 +1,29 @@
+/ Slideshow container
+.slideshow-container
+  / Full-width images with number and caption text
+  .mySlides.fade
+    .numbertext 1 / 4
+    %img{:src => asset_path('slider/main_bg.png'), :style => "width:100%"}/
+    / .text Hello
+  .mySlides.fade
+    .numbertext 2 / 4
+    %img{:src => asset_path('slider/winter_holidays/1.jpg'), :style => "width:100%"}/
+    / .text Caption Two
+  .mySlides.fade
+    .numbertext 3 / 4
+    %img{:src => asset_path('slider/winter_holidays/2.jpg'), :style => "width:100%"}/
+    / .text Caption Three
+  .mySlides.fade
+    .numbertext 4 / 4
+    %img{:src => asset_path('slider/winter_holidays/3.jpg'), :style => "width:100%"}/
+    / .text Caption Three
+  / Next and previous buttons
+  %a.prev{data: {nextmove: -1}} ❮
+  %a.next{data: {nextmove: 1} } ❯
+%br/
+/ The dots/circles
+%div{:style => "text-align:center"}
+  %span.dot{data: {currentslide: 1}}
+  %span.dot{data: {currentslide: 2}}
+  %span.dot{data: {currentslide: 3}}
+  %span.dot{data: {currentslide: 4}}

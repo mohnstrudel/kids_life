@@ -3,14 +3,4 @@
   / primary starts
   %section#primary.content-full-width
     .column.dt-sc-one-column.first.contact_form_outer
-      =form_with model: Request.new, class: 'contact-form', id: 'contact-form' do |f|
-        %h2 Напишите нам!
-        %p.column.dt-sc-one-half.first
-          =f.text_field :name, placeholder: 'Ваше имя', id: 'name', required: true
-        %p.column.dt-sc-one-half
-          =f.text_field :phone, placeholder: 'Телефон', id: 'phone', required: true
-        %p
-          =f.text_area :body, placeholder: 'Ваша идея праздника', id: 'comment', required: true
-        #ajax_contact_msg
-        %p
-          =f.submit 'Отправить', class: 'dt-sc-button medium', id: 'submit', data: { "disable_with" => "Отправляем..."}
+      =render partial: 'front/shared/contact_form'

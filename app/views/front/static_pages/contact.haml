@@ -1,0 +1,50 @@
+/ breadcrumb-section starts
+.breadcrumb-section
+  .container
+    %h1 Контакты
+    .breadcrumb
+      %a{:href => root_path} Главная
+      %span.fa.fa-angle-double-right
+      %span.current Контакты
+/ breadcrumb-section ends
+/ container starts
+.container
+  / primary starts
+  %section#primary.content-full-width
+    / #map
+    .dt-sc-hr
+    / dt-sc-two-third starts
+    .column.dt-sc-three-fourth.first.contact_form_outer
+      =render partial: 'front/shared/contact_form'
+    / dt-sc-two-third ends
+    / dt-sc-one-third starts
+    .column.dt-sc-one-fourth.class_hours
+      %h2 Часы работы
+      %ul.class_hours
+        %li
+          Понедельник
+          %span 9am - 3pm
+        %li
+          Вторник
+          %span 9am - 3pm
+        %li
+          Среда
+          %span 9am - 3pm
+        %li
+          Четверг
+          %span 9am - 3pm
+        %li
+          Пятница
+          %span 9am - 3pm
+        %li
+          Суббота
+          %span Holiday
+        %li
+          Воскресенье
+          %span Holiday
+      .dt-sc-hr-small
+    .dt-sc-hr
+
+    / dt-sc-one-third ends
+  / primary ends
+/ container ends

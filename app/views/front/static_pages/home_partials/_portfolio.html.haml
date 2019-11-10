@@ -1,92 +1,75 @@
 / container starts
-.container
+.container#portfolio
   %h2.dt-sc-hr-green-title Фотоотчет
   / portfolio-content starts
   .front-portfolio-container
-    .portfolio-content.portfolio-content1
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/001.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => '#'}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/001.jpg')}
-                %span.fa.fa-search
-    .portfolio-content.portfolio-content2
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/010.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => "portfolio-detail.html"}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/010.jpg')}
-                %span.fa.fa-search
-    .portfolio-content.portfolio-content3
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/017.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => '#'}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/017.jpg')}
-                %span.fa.fa-search
-    .portfolio-content.portfolio-content4
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/018.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => '#'}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/018.jpg')}
-                %span.fa.fa-search
-    .portfolio-content.portfolio-content5
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/019.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => '#'}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/019.jpg')}
-                %span.fa.fa-search
-    .portfolio-content.portfolio-content6
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/024.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => '#'}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/024.jpg')}
-                %span.fa.fa-search
-    .portfolio-content.portfolio-content7
-      .front-portfolio
-        .portfolio-outer
-          .portfolio-thumb
-            %img{:alt => "", :src => asset_path('events/028.jpg'), :title => ""}/
-            .image-overlay
-              %h5
-                %a{:href => '#'} Праздник в детском саду
-              %a.link{:href => '#'}
-                %span.fa.fa-link
-              %a.zoom{"data-gal" => "prettyPhoto[gallery]", :href => asset_path('events/028.jpg')}
-                %span.fa.fa-search
+    .mBox
+      .portfolio-content.portfolio-content1
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/001.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Праздник в детском саду
+      .portfolio-content.portfolio-content2
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/010.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Праздник в детском саду
+      .portfolio-content.portfolio-content3
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/017.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Праздник в детском саду
+      .portfolio-content.portfolio-content4
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/018.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Праздник в детском саду
+      %img{:alt => "", :src => asset_path('events/019.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/024.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/028.jpg'), :title => "", style: "display: none;"}/
+    .mBox2
+      .portfolio-content.portfolio-content5
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/halloween/1.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Хеллоуин
+      .portfolio-content.portfolio-content6
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/halloween/2.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Хеллоуин
+      .portfolio-content.portfolio-content7
+        .front-portfolio
+          .portfolio-outer
+            .portfolio-thumb
+              %img{:alt => "", :src => asset_path('events/halloween/3.jpg'), :title => ""}/
+              .image-overlay
+                %h5
+                  %a{:href => '#'} Хеллоуин
+      %img{:alt => "", :src => asset_path('events/halloween/4.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/halloween/5.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/halloween/6.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/halloween/7.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/halloween/8.jpg'), :title => "", style: "display: none;"}/
+      %img{:alt => "", :src => asset_path('events/halloween/9.jpg'), :title => "", style: "display: none;"}/
     .dt-sc-hr-small
     / .aligncenter
     /   %a.dt-sc-button.medium.mustard{:href => "#"}
