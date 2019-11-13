@@ -2,7 +2,7 @@
 %header
   .container
     .logo
-      %img{:alt => "Kids Life", :src => asset_path("static/clown.jpg"), :title => "Kids Life", class: 'logo-clown'}
+      / %img{:alt => "Kids Life", :src => asset_path("static/clown.jpg"), :title => "Kids Life", class: 'logo-clown'}
       .logo-additional
         =link_to root_path, method: :get do
           %img{:alt => "Kids Life", :src => asset_path("defaults/logo.svg"), :title => "Kids Life", width: 360}/
@@ -26,16 +26,15 @@
           %li.current_page_item.menu-item-simple-parent.menu-item-depth-0.red
             =link_to 'Главная', root_path, method: :get
           %li.mustard
-            %a{:href => "#elza_show"} О нас
+            =link_to 'О нас', root_path(anchor: 'elza_show')
           / %li.green
           /   %a{:href => "#animator_show"} Наша команда
           %li.yellow
             =link_to 'Услуги', services_path
           %li.steelblue
-            %a{:href => "#teambuilding"} Тимбилдинги
+            =link_to 'Тимбилдинги', root_path(anchor: 'teambuilding')
           %li.lavender
-            %a{:href => "#masterclass"} Мастер-классы
-
+            =link_to 'Мастер-классы', root_path(anchor: 'masterclass')
           %li.steelblue
             %a{:href => contact_path, :title => ""} Контакты
       / nav ends
@@ -47,7 +46,7 @@
           %a.dt-sc-tooltip-top.youtube{ href: "#", title: "Youtube", target: '_blank'}
             %span.fa.fa-youtube
         %li
-          %a.dt-sc-tooltip-top.instagram{ href: "https://stalker-stories.com/instagram/skazkashow.msk", title: "Instagram", target: '_blank'}
+          %a.dt-sc-tooltip-top.instagram{ href: "https://instagram.com/skazkashow.msk", title: "Instagram", target: '_blank'}
             %span.fa.fa-instagram
         / %li
         /   %a.dt-sc-tooltip-top.gplus{:href => "#", :title => "Google Plus"}

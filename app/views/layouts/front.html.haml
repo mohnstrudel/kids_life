@@ -3,7 +3,11 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
-    %title KidsLife
+    %title="Детские праздники в Москве с аниматорами | агенство 'Сказка Шоу'"
+    %meta{title: "Детские праздники в Москве с аниматорами | агенство 'Сказка Шоу'"}
+    %meta{description: "Организация детских праздников с полным погружением в атмосферу сказки. Агенство Сказка Шоу предлагает авторские шоу программы в Москве с участием аниматоров. У нас можно недорого заказать проведение детского праздника в детском саду, в бейби-клубе, торговом центре. Организация дня рождения ребенка, конкурсы для детей, фокусы, костюмы героев мультиков и многое другое. Наши профессиональные аниматоры подарят счастье вашим деткам!"}
+    %meta{keywords: ['детские праздники москва', 'аниматор на детский праздник', 'организация детских праздников в москве']}
+
     = csrf_meta_tags
     = csp_meta_tag
 
@@ -20,3 +24,6 @@
       = render partial: "front/navigation/footer"
       = render partial: "front/navigation/footer_popups"
     %a.back-to-top{:href => "", :title => "Go to Top"} To Top ↑
+
+  %script{:async => "", :charset => "utf-8", :src => "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51e4c306a14de09e7bb08fa7c751d85d69e369ab976d95f6b2db5dd437418eb5&id=yandex_map&width=100%25&height=400&lang=ru_RU&scroll=false", :type => "text/javascript"}
+
