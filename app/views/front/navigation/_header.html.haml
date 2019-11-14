@@ -26,17 +26,17 @@
           %li.current_page_item.menu-item-simple-parent.menu-item-depth-0.red
             =link_to 'Главная', root_path, method: :get
           %li.mustard
-            =link_to 'О нас', root_path(anchor: 'elza_show')
+            =link_to 'О нас', root_path(anchor: 'elza_show'), method: :get
           / %li.green
           /   %a{:href => "#animator_show"} Наша команда
           %li.yellow
-            =link_to 'Услуги', services_path
+            =link_to 'Услуги', services_path, method: :get
           %li.steelblue
-            =link_to 'Тимбилдинги', root_path(anchor: 'teambuilding')
+            =link_to 'Тимбилдинги', root_path(anchor: 'teambuilding'), method: :get
           %li.lavender
-            =link_to 'Мастер-классы', root_path(anchor: 'masterclass')
+            =link_to 'Мастер-классы', root_path(anchor: 'masterclass'), method: :get
           %li.steelblue
-            %a{:href => contact_path, :title => ""} Контакты
+            =link_to 'Контакты', contact_path, method: :get
       / nav ends
       %ul.dt-sc-social-icons
         %li

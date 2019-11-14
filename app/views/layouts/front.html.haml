@@ -17,7 +17,7 @@
     = javascript_pack_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload'
 
 
-  %body.main
+  %body{class: "#{controller_name} #{action_name} main"}
     .wrapper
       = render partial: "front/navigation/header"
       = yield
@@ -25,5 +25,7 @@
       = render partial: "front/navigation/footer_popups"
     %a.back-to-top{:href => "", :title => "Go to Top"} To Top ↑
 
-  %script{:async => "", :charset => "utf-8", :src => "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51e4c306a14de09e7bb08fa7c751d85d69e369ab976d95f6b2db5dd437418eb5&id=yandex_map&width=100%25&height=400&lang=ru_RU&scroll=false", :type => "text/javascript"}
+    / =javascript_pack_tag "https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU"
+    = javascript_include_tag 'https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU', media: 'all', 'data-turbolinks-track': 'reload'
+    / %script{:async => "", :charset => "utf-8", :src => "https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU", :type => "text/javascript"}
 
