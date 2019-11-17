@@ -1,7 +1,7 @@
 #main
   / slider starts
   / #slider_placeholder
-  =render partial: 'front/static_pages/home_partials/slider'
+  =render partial: 'front/static_pages/home_partials/slider_old_2'
   / slider ends
   / primary starts
   %section#primary.content-full-width
@@ -24,19 +24,6 @@
       .dt-sc-hr
       =render partial: 'front/static_pages/home_partials/portfolio'
       .dt-sc-hr
-      / fullwidth-background starts
-      %section.fullwidth-background.dt-sc-parallax-section.orange-bg
-        #contact
-          / container starts
-          / =render partial: "front/static_pages/home_partials/blog"
-          =render partial: "front/static_pages/home_partials/contact"
-        / dt-sc-one-half ends
-        / container ends
-      / fullwidth-background ends
-      / .dt-sc-hr
-    / %section#animator_show
-    /   =render partial: "front/static_pages/home_partials/staff"
-    /   .dt-sc-hr
 
     %section.fullwidth-background.dt-sc-parallax-section.product_bg{:style => "background-position: 50% 54px;"}
       #elza_show
@@ -48,6 +35,11 @@
 
     %section.fullwidth-background.dt-sc-parallax-section.turquoise-bg{:style => "background-position: 50% -59px;"}
       =render partial: 'front/static_pages/home_partials/masterclass'
+    %section.fullwidth-background.dt-sc-parallax-section.orange-bg
+      #contact
+        / container starts
+        / =render partial: "front/static_pages/home_partials/blog"
+        =render partial: "front/static_pages/home_partials/contact"
 
       / primary ends
       / main ends

@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'cells-rails'
 gem 'figaro'
 gem 'haml-rails'
+gem 'metamagic'
 
 
 group :development, :test do
