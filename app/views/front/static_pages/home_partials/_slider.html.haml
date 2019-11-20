@@ -7,7 +7,12 @@
         %img{:src => asset_path('slider/winter_holidays/2.jpg'), :style => "width:100%"}/
       %li.glide__slide
         %img{:src => asset_path('slider/winter_holidays/3.jpg'), :style => "width:100%"}/
+      %li.glide__slide
+        %img{:src => asset_path('slider/main_bg.png'), :style => "width:100%"}/
 
-  %div{"data-glide-el" => "controls"}
-    %button{"data-glide-dir" => "<<"} start
-    %button{"data-glide-dir" => ">>"} end
+
+  .glide__bullets{"data-glide-el" => "controls[nav]"}
+    %button.glide__bullet{"data-glide-dir" => "=0"}
+    %button.glide__bullet{"data-glide-dir" => "=1"}
+    %button.glide__bullet{"data-glide-dir" => "=2"}
+    %button.glide__bullet{"data-glide-dir" => "=3"}

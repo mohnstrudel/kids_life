@@ -6,12 +6,12 @@
 
 // Internal
 // require("@rails/ujs")
-import { Glide } from '@glidejs/glide'
+// import { Glide } from '@glidejs/glide'
 // Glide.start()
 
 import Rails from '@rails/ujs'
 Rails.start()
-require('jquery')
+// require('jquery')
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
@@ -19,7 +19,6 @@ require("channels")
 // Custom
 
 require('./vendor_js/vendor_import.js')
-require('./custom/z_custom_import.js');
 
 
 

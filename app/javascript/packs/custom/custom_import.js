@@ -1,5 +1,4 @@
 require("./slider.js");
-// require("./new_slider.js");
 
 require("./mBox.js");
 require("./lightbox_script.js");
