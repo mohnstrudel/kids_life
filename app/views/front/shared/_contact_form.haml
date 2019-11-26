@@ -1,5 +1,8 @@
 =form_with model: Request.new, class: 'contact-form', id: 'contact-form' do |f|
-  %h2 Задайте нам вопрос!
+  -if title
+    %h2=title
+  -else
+    %h2="Заказать звонок"
   %p.column.dt-sc-one-half.first
     =f.text_field :name, placeholder: 'Ваше имя', id: 'name', required: true
   %p.column.dt-sc-one-half

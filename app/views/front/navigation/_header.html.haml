@@ -5,7 +5,7 @@
       / %img{:alt => "Kids Life", :src => asset_path("static/clown.jpg"), :title => "Kids Life", class: 'logo-clown'}
       .logo-additional
         =link_to root_path, method: :get do
-          %img{:alt => "Kids Life", :src => asset_path("defaults/logo.svg"), :title => "Kids Life", width: 360}/
+          %img{:alt => "Kids Life", :src => asset_path("defaults/logo.svg"), :title => "Организация детских праздников 'Сказка шоу'", width: 360}/
     .contact-details
       %p.mail
         %a{:href => "mailto:info@skazka-show.ru"} info@skazka-show.ru
@@ -26,9 +26,9 @@
           %li.current_page_item.menu-item-simple-parent.menu-item-depth-0.red
             =link_to 'Главная', root_path, method: :get
           %li.mustard
-            =link_to 'О нас', root_path(anchor: 'elza_show'), method: :get
+            =link_to 'О нас', root_path(anchor: 'about_us'), method: :get
           %li.menu-item-megamenu-parent.megamenu-4-columns-group.menu-item-depth-0.blue
-            %a{:href => "#", :title => ""} Услуги
+            %a{:href => "javascript:void(0)", :title => ""} Услуги
             .megamenu-child-container
               %ul.sub-menu
                 %li
