@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root 'static_pages#home'
 
     get 'contact', to: 'static_pages#contact'
+    get 'ded-moroz-i-snegurochka', to: 'static_pages#new_year', as: 'new_year'
     resources :requests
     resources :services
   end
