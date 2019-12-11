@@ -7,6 +7,11 @@
     = csrf_meta_tags
     = csp_meta_tag
     = javascript_pack_tag 'header_scripts', media: 'all', 'data-turbolinks-track': 'reload'
+    / =javascript_pack_tag "https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU"
+    = javascript_include_tag 'https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU', media: 'all', 'data-turbolinks-track': 'reload'
+    / %script{:async => "", :charset => "utf-8", :src => "https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU", :type => "text/javascript"}
+    = javascript_pack_tag 'front', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap', media: 'all', rel: 'stylesheet'
     = stylesheet_link_tag 'front', media: 'all', 'data-turbolinks-track': 'reload'
 
@@ -19,11 +24,7 @@
       = render partial: "front/navigation/footer_popups"
     %a.back-to-top{:href => "", :title => "Go to Top"} To Top ↑
 
-    / =javascript_pack_tag "https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU"
-    = javascript_include_tag 'https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU', media: 'all', 'data-turbolinks-track': 'reload'
-    / %script{:async => "", :charset => "utf-8", :src => "https://api-maps.yandex.ru/2.1/?apikey=1288218d-8da1-4ed1-8040-74839248ca89&lang=ru_RU", :type => "text/javascript"}
-    = javascript_pack_tag 'front', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload'
+
     %noscript
       %div
         %img{:alt => "", :src => "https://mc.yandex.ru/watch/56331247", :style => "position:absolute; left:-9999px;"}/

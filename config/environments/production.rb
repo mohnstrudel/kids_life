@@ -111,7 +111,7 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   # Mailer config for devise
-  config.action_mailer.default_url_options = { host: Figaro.env.hostname }
+  config.action_mailer.default_url_options = { host: Figaro.env.hostname, from: 'info@skazka-show.ru' }
 
   config.action_mailer.raise_delivery_errors = true
   # config.action_mailer.perform_deliveries = true
@@ -121,13 +121,14 @@ Rails.application.configure do
   # Specify what domain to use for mailer URLs
 
   config.action_mailer.smtp_settings = {
-    :user_name => Figaro.env.mailer_user,
-    :password => Figaro.env.mailer_password,
-    :domain => Figaro.env.hostname,
-    :address => Figaro.env.mailer_address,
-    :port => 465,
-    :authentication => :plain,
-    # :enable_starttls_auto => true
-    tls: true
+    user_name: Figaro.env.mailer_user,
+    password: Figaro.env.mailer_password,
+    domain: Figaro.env.hostname,
+    address: Figaro.env.mailer_address,
+    port: 587,
+    authentication: 'plain'
+    # tls: true
+    # enable_starttls_auto: true
+    # openssl_verify_mode: 'peer'
   }
 end

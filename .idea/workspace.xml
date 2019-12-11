@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2602eaf6-1430-405f-b1ab-6fa39edbae87" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/front/navigation/_header.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/front/navigation/_header.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/front/static_pages/new_year.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/front/static_pages/new_year.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +43,9 @@
       <option name="presentableId" value="Default" />
       <updated>1574805842054</updated>
       <workItem from="1574805847850" duration="6000" />
-      <workItem from="1575971817242" duration="3551000" />
+      <workItem from="1575971817242" duration="5515000" />
+      <workItem from="1576066628756" duration="5000" />
+      <workItem from="1576066638647" duration="5506000" />
     </task>
     <servers />
   </component>
@@ -57,7 +57,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,4 +1,7 @@
 class RequestMailer < ApplicationMailer
+  default from: 'info@skazka-show.ru'
+  layout 'mailer'
+
   def notify_admin(request)
     @request = request
 
